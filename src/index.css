@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #ffffe1 0%,#ffffe1 40%, #addfac 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(173, 223, 172, 0.15);
+}
+
+.card {
+  background: #fffff8;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(173, 223, 172, 0.15);
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1.5px solid #e3f9db;
+}
+  
+.card h2 {
+  margin-bottom: 12px;
+  color: #333
+}
+
+.btn {
+  background: #addfac;
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(173, 223, 172, 0.08);
+}
+
+.btn:hover {
+  background: #8fd19a;
+  color: #222;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #e9f9e1;
+  color: #666;
+}
+
+.btn-secondary:hover {
+  background: #d7f2cd;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #4b6e4b;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e3f9db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+  background: #fffff8;
+  color: #333;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #addfac;
+  background: #f6fff2;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4b6e4b;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  color: #4b6e4b;
+  text-shadow: 0 2px 4px rgba(173, 223, 172, 0.08);
+}
+
+
+.app-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 8px;
+  }
+  .card {
+    padding: 12px;
+  }
+}
